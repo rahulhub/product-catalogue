@@ -1,0 +1,296 @@
+<!-- Created By: Rahul Dev -->
+<div class="container">
+<section class="prod-section prod-sectionPrimary">
+<div class="prod-sectionWrap">
+<h1 class="prod-header prod-headePage ">Categories</h1>
+</div>
+</section>
+<section class="prod-section prod-sectionSecondary">
+<div class="prod-sectionWrap">
+<div class="prod-flex prod-flex--forced-row prod-flex--row prod-flex--justify-between prod-flex--align-center">
+<span>Add, view and edit your categories all in one place. </span>
+<div class="prod-button-group">
+<a class="prod-button prod-button--primary" href="" data-bind="click: addRootCategory">Add Root Category</a>
+<a class="prod-button prod-button--primary" href="" data-bind="click: addSubCategory">Add Sub Category</a>
+</div>
+</div>
+</div>
+
+</section>
+
+	<div class="row paddingTop15">
+		<div class="col-lg-2">
+			Select Root Category:
+			<div class="btn-group btn-group-sm browseCategory">
+				<select class="btn btn-default"
+					data-bind="options: rootCategory,
+	                       optionsText: 'name',
+	                       value: selectedCategory,
+	                       optionsCaption: 'Select Category'"></select>
+			</div>
+		</div>
+		<!-- /.col-lg-6 -->
+		<div class="col-lg-2">
+			Select SubCategory:</br>
+			<div class="btn-group btn-group-sm browseCategory">
+				<select class="btn btn-default"
+					data-bind="options: subCategories,
+	                       optionsText: 'name',
+	                       value: selectedSubCategory,
+	                       optionsCaption: 'Select Sub Category'"></select>
+			</div>
+		</div>
+
+		<!-- Level 2 sub categories -->
+
+		<div class="row paddingLft50">
+			<div class="col-lg-2">
+				Select Level 2 Category:</br>
+				<div class="btn-group btn-group-sm browseCategory">
+					<select class="btn btn-default"
+						data-bind="options: level2Categories,
+	                       optionsText: 'name',
+	                       value: selectedLevel2Category,
+	                       optionsCaption: 'Select Sub Category'"></select>
+				</div>
+			</div>
+			<!-- Level 3 sub categories -->
+			<div class="row paddingLft50">
+				<div class="col-lg-2">
+					Select Level 3 Category:</br>
+					<div class="btn-group btn-group-sm browseCategory">
+						<select class="btn btn-default"
+							data-bind="options: level3Categories,
+	                       optionsText: 'name',
+	                       value: selectedLevel3Category,
+	                       optionsCaption: 'Select Sub Category'"></select>
+					</div>
+				</div>
+				<!-- Level 4 sub categories -->
+				<div class="row paddingLft50">
+					<div class="col-lg-2">
+						Select Level 4 Category:</br>
+						<div class="btn-group btn-group-sm browseCategory">
+							<select class="btn btn-default"
+								data-bind="options: level4Categories,
+	                       optionsText: 'name',
+	                       value: selectedLevel4Category,
+	                       optionsCaption: 'Select Sub Category'"></select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="row paddingTop15">
+
+		<!-- /.col-lg-6 -->
+
+		<div class="col-lg-6" data-bind="visible: showAddRootCat">
+			<!-- ko compose: 'viewmodels/createRootCategory'-->
+			<!-- /ko -->
+		</div>
+	</div>
+
+	<div class="row paddingTop15">
+
+		<!-- /.col-lg-6 -->
+
+		<div class="col-lg-6" data-bind="visible: showAddSubCat">
+			<!-- ko compose: 'viewmodels/addSubCategory'-->
+			<!-- /ko -->
+		</div>
+	</div>
+
+<!--	<div class="row paddingTop15">
+
+		<button type="button" class="btn btn-primary"
+			data-bind="click: addNestedCategory">Add SubCategory to
+			SubCategory</button>
+
+	</div> -->
+	
+<section class="prod-section prod-sectionPrimary">
+<div class="prod-sectionWrap">
+<h1 class="prod-header prod-headePage ">Products</h1>
+</div>
+</section>
+<section class="prod-section prod-sectionSecondary">
+<div class="prod-sectionWrap">
+<div class="prod-flex prod-flex--forced-row prod-flex--row prod-flex--justify-between prod-flex--align-center">
+<span>Add or fetch products for selected category in one place. </span>
+<div class="prod-button-group">
+<a class="prod-button prod-button--primary" href="" data-bind="click: fetchProducts">Fetch Products</a>
+<a class="prod-button prod-button--primary" href="" data-bind="click: addProduct">Add Product</a>
+
+</div>
+</div>
+</div>
+
+</section>
+
+	
+
+	<div class="row paddingTop15">
+		<div class="col-lg-2">
+			Select Product:</br>
+			<div class="btn-group btn-group-sm browseCategory">
+				<select class="btn btn-default"
+					data-bind="options: prodInCategory,
+	                       optionsText: 'name',
+	                       value: selectedProduct,
+	                       optionsCaption: 'Select Product'"></select>
+			</div>
+		</div>
+		<!-- /.col-lg-6 -->
+		
+
+	</div>
+
+	<div class="row paddingTop15">
+
+		<!-- /.col-lg-6 -->
+
+		<div class="col-lg-6" data-bind="visible: showAddProduct">
+			<!-- ko compose: 'viewmodels/addProduct'-->
+			<!-- /ko -->
+		</div>
+	</div>
+
+
+
+	
+<section class="prod-section prod-sectionPrimary">
+<div class="prod-sectionWrap">
+<h1 class="prod-header prod-headePage ">Items</h1>
+</div>
+</section>
+<section class="prod-section prod-sectionSecondary">
+<div class="prod-sectionWrap">
+<div class="prod-flex prod-flex--forced-row prod-flex--row prod-flex--justify-between prod-flex--align-center">
+<span>Add Items for selected Product in one place. </span>
+<div class="prod-button-group">
+<a class="prod-button prod-button--primary" href="" data-bind="click: addItem">Add Item</a>
+</div>
+</div>
+</div>
+
+</section>
+
+	<div class="row paddingTop15">
+
+		<div class="col-lg-2">
+			Select Item:</br>
+			<div class="btn-group btn-group-sm browseCategory">
+				<select class="btn btn-default"
+					data-bind="options: items,
+	                       optionsText: 'name',
+	                       value: selectedItem,
+	                       optionsCaption: 'Select Item'"></select>
+			</div>
+		</div>
+		
+
+	</div>
+	<div class="row paddingTop15">
+
+		<div class="col-lg-6" data-bind="visible: showAddItem">
+			<!-- ko compose: 'viewmodels/addItem'-->
+			<!-- /ko -->
+		</div>
+	</div>
+	
+	<section class="prod-section prod-sectionPrimary">
+<div class="prod-sectionWrap">
+<h1 class="prod-header prod-headePage ">Item Media</h1>
+</div>
+</section>
+<section class="prod-section prod-sectionSecondary">
+<div class="prod-sectionWrap">
+<div class="prod-flex prod-flex--forced-row prod-flex--row prod-flex--justify-between prod-flex--align-center">
+<span>Add Item Media for selected Item above. </span>
+<div class="prod-button-group">
+<a class="prod-button prod-button--primary" href="" data-bind="click: addItemMedia">Add Item Media</a>
+</div>
+</div>
+</div>
+
+</section>
+
+<div class="row paddingTop15">
+
+		<div class="col-lg-6" data-bind="visible: showAddItemMedia">
+			<!-- ko compose: 'viewmodels/addItemMedia'-->
+			<!-- /ko -->
+		</div>
+	</div>
+	<div class="row paddingTop15 paddingLft">
+		Item have following Attributes: <br />
+		<!-- ko foreach: itemAttributes() -->
+		<span data-bind="text: $data.catalogPropertyKey.propertyName"></span>:<span
+			data-bind="text: $data.textValue"></span><br />
+		<!-- /ko -->
+	</div>
+
+	<div class="row paddingTop15">
+		<div class="col-lg-2">
+			<b>Add New Attribute to Item:</b> <br /> Select Attribute:</br>
+			<div class="btn-group btn-group-sm browseCategory">
+				<select class="btn btn-default"
+					data-bind="options: attributes,
+	                       optionsText: 'propertyName',
+	                       value: selectedAttributes,
+	                       optionsCaption: 'Select Attribute'"></select>
+			</div>
+
+
+
+			<form id="attValue">
+				<label for="textValue">Its Value :</label> <input type="text"
+					name="textValue" class="form-control font11" />
+			</form>
+
+			<button type="button" class="btn btn-primary"
+				data-bind="click: addAttToItem">Add Attribute to Item</button>
+
+		</div>
+		<!-- /.col-lg-6 -->
+
+		<div class="col-lg-2"></div>
+	</div>
+
+	<div class="row paddingTop15">
+		<b>If,attributes are not in the dropdown then add new attributes
+			by clicking this button</b>
+		<div class="col-lg-2">
+			<button type="button" class="btn btn-primary"
+				data-bind="click: addAttribute">Add New Attribute</button>
+		</div>
+	</div>
+	<div class="row paddingTop15">
+		<div class="col-lg-6" data-bind="visible: showAddAttr">
+			<!-- ko compose: 'viewmodels/addAttributes'-->
+			<!-- /ko -->
+		</div>
+	</div>
+</div>
+
+<script type="text/html" id="subCategoryTemplate">
+<div class="row paddingLft50">
+<!-- ko if: $data !== undefined-->
+<div class="col-lg-2">
+	Select SubCategory:</br>
+		<div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $parent.subCategories,
+	                       optionsText: 'name',
+	                       value: $parent.selectedSubCategory,
+	                       optionsCaption: 'Select Sub Category'"></select>
+		</div>
+	</div>
+	<!-- /ko -->
+</div>
+	
+</script>

@@ -1,0 +1,268 @@
+<div class="container">
+	<form id="createProduct">
+		<table id="product">
+			<thead>
+			<tr>
+				<th>Property</th>
+				<th>Value</th>
+				<th></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Product ID</td>
+				<td><input type="text" name="productId"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Product Name</td>
+				<td><input type="text" name="name" class="form-control font11" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Short Description</td>
+				<td><input type="text" name="shortDesc"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Long Description</td>
+				<td><input type="text" name="longDesc"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Large Image Alt text</td>
+				<td><input type="text" name="largeImgAltText"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Large Image Name</td>
+				<td><input type="text" name="largeImgName"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Image url</td>
+				<td><input type="text" name="largeImgUrl"
+						   class="form-control font11" data-bind="value: largeImgURL"/></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="paddingAll" style="vertical-align:top"><b>Attach File:</b></td>
+				<td>
+					<input type="file" id="uploadLargeProductImg" data-bind="event: { change: handleImages($element.files) }" accept="image/*" multiple>
+				<td><a style="font-size:1.5em;" class="glyphicon glyphicon-upload cmsbtn" data-bind="click: function(data, event) { uploadImages(data, event, 'uploadLargeProductImg') }" title="Upload files"></a>
+				</td>
+
+			</tr>
+			<tr>
+				<td>Small Image Alt text</td>
+				<td><input type="text" name="smallImgAltText"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Small Image Name</td>
+				<td><input type="text" name="smallImgName"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Small Image url</td>
+				<td><input type="text" name="smallImgUrl" class="form-control font11" data-bind="value: smallImgURL"/></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td class="paddingAll" style="vertical-align:top"><b>Attach File:</b></td>
+				<td>
+					<input type="file" id="uploadSmallProductImg" data-bind="event: { change: handleImages($element.files) }" accept="image/*" multiple>
+				<td><a style="font-size:1.5em;" class="glyphicon glyphicon-upload cmsbtn" data-bind="click: function(data, event) { uploadImages(data, event, 'uploadSmallProductImg') }" title="Upload files"></a>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>Is in Stock?</td>
+				<td><input type="text" name="inStock"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Max retail Price</td>
+				<td><input type="text" name="msrpAmount"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Amount</td>
+				<td><input type="text" name="priceAmount"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Shipping Code</td>
+				<td><input type="text" name="shippingCode"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Estimated Shipping Time</td>
+				<td><input type="text" name="estimateShipTime"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Source</td>
+				<td><input type="text" name="source"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Special Notes</td>
+				<td><input type="text" name="specialNotes"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Tax Code</td>
+				<td><input type="text" name="taxCode"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Is Visible</td>
+				<td><input type="text" name="visible"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+			<!--
+                    <tr>
+                        <td>Metal Form</td>
+                        <td>
+                            <select class="btn btn-default" name="metalForm">
+                                <option value="GENERALFORM">General Form</option>
+                                <option value="ISBMFORM">ISBM Form</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+            -->
+
+			<tr>
+				<td>Calculation Template (Only for Optimet)</td>
+				<td><div class="col-lg-2">
+					<div class="btn-group btn-group-sm browseCategory">
+						<select class="btn btn-default" name="calcTemplate">
+							<option value="CRSHEETS">CRSHEETS </option>
+							<option value="HRSHEETS">HRSHEETS </option>
+							<option value="CHECKEREDPLATES"> CHECKEREDPLATES</option>
+							<option value="EQUALANGLES">EQUALANGLES </option>
+							<option value="UNEQUALANGLES">UNEQUALANGLES </option>
+							<option value="CCHANNELS"> CCHANNELS</option>
+							<option value="IBEAMS"> IBEAMS</option>
+							<option value="RECTANGULARPIPES">RECTANGULARPIPES </option>
+							<option value="ERWPIPES"> ERWPIPES</option>
+							<option value="SEAMLESSPIPES"> SEAMLESSPIPES</option>
+							<option value="FLATS">FLATS </option>
+							<option value="ROUNDBARS">ROUNDBARS </option>
+							<option value="SQUAREBARS"> SQUAREBARS</option>
+							<option value="SHEETSANDPLATES">SHEETSANDPLATES </option>
+							<option value="ROUNDPIPES">ROUNDPIPES </option>
+							<option value="FLATS_GRADE_COMMERCIAL">FLATS_GRADE_COMMERCIAL </option>
+							<option value="FLATS_GRADE_ELECTRICAL_SQUARE">FLATS_GRADE_ELECTRICAL_SQUARE </option>
+							<option value="FLATS_GRADE_ELECTRICAL_ROUND">FLATS_GRADE_ELECTRICAL_ROUND </option>
+							<option value="SHEETSANDPLATES_GRADE_201">SHEETSANDPLATES_GRADE_201 </option>
+							<option value="SHEETSANDPLATES_GRADE_301"> SHEETSANDPLATES_GRADE_301</option>
+							<option value="SHEETSANDPLATES_GRADE_304"> SHEETSANDPLATES_GRADE_304</option>
+							<option value="RECTANGULARPIPES_GRADE_201">RECTANGULARPIPES_GRADE_201 </option>
+							<option value="RECTANGULARPIPES_GRADE_301">RECTANGULARPIPES_GRADE_301 </option>
+							<option value="RECTANGULARPIPES_GRADE_304"> RECTANGULARPIPES_GRADE_304</option>
+							<option value="RoundPIPES_GRADE_201">RoundPIPES_GRADE_201 </option>
+							<option value="RoundPIPES_GRADE_301"> RoundPIPES_GRADE_301</option>
+							<option value="RoundPIPES_GRADE_304">RoundPIPES_GRADE_304 </option>
+							<option value="FLATS_GRADE_201"> FLATS_GRADE_201</option>
+							<option value="FLATS_GRADE_301">FLATS_GRADE_301 </option>
+							<option value="FLATS_GRADE_304">FLATS_GRADE_304 </option>
+							<option value="ROUNDBARS_GRADE_201">ROUNDBARS_GRADE_201 </option>
+							<option value="ROUNDBARS_GRADE_301"> ROUNDBARS_GRADE_301</option>
+							<option value="ROUNDBARS_GRADE_304"> ROUNDBARS_GRADE_304</option>
+							<option value="SQUAREBARS_GRADE_201">SQUAREBARS_GRADE_201 </option>
+							<option value="SQUAREBARS_GRADE_301">SQUAREBARS_GRADE_301 </option>
+							<option value="SQUAREBARS_GRADE_304">SQUAREBARS_GRADE_304</option>
+						</select>
+					</div>
+				</div></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Discount Percentage</td>
+				<td><input type="text" name="discount"
+						   class="form-control font11" /></td>
+				<td></td>
+			</tr>
+
+
+			<tr>
+				<td>Root Category</td>
+				<td>
+					<select class="btn btn-default"
+							data-bind="options: selectRootCategory,
+	                       optionsText: 'name',
+	                       value: selectedRootCategory,
+	                       optionsCaption: 'Select Root Category'"></select>
+
+
+				</td>
+				<td></td>
+			</tr>
+
+			</tbody>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	</form>
+
+
+	<div data-bind="visible: showAddIziWearProduct">
+
+		<!-- ko compose: 'viewmodels/addIziWearData'-->
+		<!-- /ko -->
+
+
+	</div>
+
+	<button type="button" class="btn btn-primary font11" data-bind="click: createProduct">Create</button>
+
+
+</div>
+
+
+
+
+
+
+
+

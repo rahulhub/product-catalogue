@@ -1,0 +1,83 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Segoe UI", "Helvetica", Arial, sans-serif;
+   text-decoration: none;
+}
+.navbar{
+  margin-bottom:10px;
+}
+.ko-treeview-container {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+ /* border: 1px solid #eee;*/
+  background-color: white;
+  /*border-radius: 3px;*/
+  padding-right: 7px;
+  padding-top: 5px;
+ 
+}
+.ko-treeview-container .navbar {
+  margin-right: 0px;
+}
+.ko-treeview-container > .ko-treeview-list {
+  padding: 0;
+  margin-left:0px;
+  
+}
+.ko-treeview-list {
+  list-style: none;
+    color: black;important!
+   
+  }
+  .ko-treeview-list p {
+  list-style: none;
+  color: black;important!
+  }
+
+.ko-treeview-listitem {
+  line-height: 2em;
+  margin-top: 0px;
+}
+.ko-treeview-label {
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  cursor: pointer;
+  display: block;
+  margin-left: 5px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  /*border-bottom: 1px solid #bdc3c7;*/
+
+}
+.ko-treeview-label:hover {
+ /* border-bottom-color: #2980b9;*/
+}
+.ko-treeview-cb {
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  float: right;
+  clear: both;
+  margin-top: 1em;
+  margin-left: 5px;
+}
+.ko-treeview-cb:checked {
+  margin-top: 1.5em;
+}
+.ko-treeview-cb:checked + label {
+  line-height: 50px;
+  font-weight: bold;
+ /* border-bottom-color: #27ae60;*/
+  font-size: 1.1em;
+  color: #27ae60;
+}

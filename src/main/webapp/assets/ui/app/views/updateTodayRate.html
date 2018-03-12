@@ -1,0 +1,71 @@
+<div class="container">
+<div class="row paddingTop15">
+<div class="col-lg-6">
+	Select Root Category:
+		<div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: rootCategory,
+	                       optionsText: 'name',
+	                       value: selectedCategory,
+	                       optionsCaption: 'Select Category'"></select>
+		</div>
+	</div>
+	<!-- /.col-lg-6 -->
+</div>
+
+
+<div class="row paddingTop15">
+	<div class="col-lg-2">
+	Select SubCategory:
+		<div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: subCategories,
+	                       optionsText: 'name',
+	                       value: selectedSubCategory,
+	                       optionsCaption: 'Select Sub Category'"></select>
+		</div>
+	</div>
+</div>
+<div class="row paddingTop15">
+<form id="updateTodayRate">
+<table id="todayRate">
+	<thead>
+		<tr>
+			<th>Property</th>
+			<th>Value</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		
+		<tr>
+			<td>Today's Base Rate in INR/KG</td>
+			<td><input type="text" name="tBaseRate"
+				class="form-control font11" data-bind="value: tBaseRate" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Today's Cut Piece Rate in INR/KG</td>
+			<td><input type="text" name="tCutRate"
+				class="form-control font11" data-bind="value: tCutRate" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Specific Gravity Considered GM/SQCM</td>
+			<td><input type="text" name="specGravity"
+				class="form-control font11" data-bind="value: specGravity"  /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Minimum Dimension Allowed in MM</td>
+			<td><input type="text" name="minDimension"
+				class="form-control font11" data-bind="value: minDimension"  /></td>
+			<td></td>
+		</tr>
+
+	</tbody>
+</table>
+<br/><button type="button" class="btn btn-primary font11" data-bind="click: updateTodayRate">Update</button>
+</form>
+</div>
+</div>

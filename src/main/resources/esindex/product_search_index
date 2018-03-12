@@ -1,0 +1,151 @@
+curl -XPUT "http://localhost:9200/product_item_search" -d'
+{
+    "settings": {
+        "analysis": {
+            "filter": {
+                "nGram_filter": {
+                    "type": "nGram",
+                    "min_gram": 2,
+                    "max_gram": 20,
+                    "token_chars": [
+                        "letter",
+                        "digit",
+                        "punctuation",
+                        "symbol"
+                    ]
+                },
+                "snowball": {
+                    "type": "snowball",
+                    "language" : "english"
+                },
+                "stopwords": {
+                    "type": "stop",
+                    "ignore_case" : "true"
+                },
+                "worddelimiter": {
+                    "type": "word_delimiter"
+                }
+            },
+            "tokenizer": {
+                "nGram": {
+                    "type": "nGram",
+                    "min_gram": 2,
+                    "max_gram": 20
+                }
+            },
+            "analyzer": {
+                "nGram_analyzer": {
+                    "type": "custom",
+                    "tokenizer": "nGram",
+                    "filter": [
+                        "stopwords",
+                        "asciifolding",
+                        "lowercase",
+                        "snowball",
+                        "elision",
+                        "worddelimiter"
+                    ]
+                },
+                "custom_search_analyzer": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "filter": [
+                        "stopwords",
+                        "asciifolding",
+                        "lowercase",
+                        "snowball",
+                        "elision",
+                        "worddelimiter"
+                    ]
+                }
+            }
+        }
+    },
+    "mappings": {
+        "products": {
+            "_all": {
+                "type": "completion",
+                "index_analyzer": "nGram_analyzer",
+                "search_analyzer": "custom_search_analyzer"
+            },
+	"_id": {
+                 "type": "string",
+                  "index": "not_analyzed",
+                    "include_in_all": false
+                },
+            "properties": {
+                "ProductId": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                    "include_in_all": true
+                },
+                "ProductDisplayUrl": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                    "include_in_all": true
+                },
+                "ProductLongDescription": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                } ,
+                 "ProductShortDescription": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                } ,
+                 "CategoryId": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                } ,
+                 "CategoryLongDesciption": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                } ,
+                "CategoryShortDescription": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                } ,
+                 "ProductKeyword": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                }  ,
+                 "ItemName": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                }  ,
+                 "ItemLongDescription": {
+                    "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                }  ,
+                 "ItemShortDescription": {
+                   "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                }   ,
+                 "ItemId": {
+                   "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                },
+                 "RootCat": {
+                   "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                }    ,
+                 "CatName": {
+                   "type": "string",
+                    "index": "not_analyzed",
+                      "include_in_all": true
+                }        
+        }
+	} 
+ }
+}'
+

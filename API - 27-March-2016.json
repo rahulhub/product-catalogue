@@ -1,0 +1,128 @@
+EcomLogin {
+    id: integer
+    loginName: string
+    password: string
+}
+
+EcomCustomerModel {
+    customerId: integer
+    indiFirstName: string
+    indiLastName: string
+    indiMobileNum: string
+    firstContactFirstName: string
+    firstContactLastName: string
+    firstContactEmail: string
+    firstContactMobileNum: string
+    secondContactFirstName: string
+    secondContactLastName: string
+    secondContactEmail: string
+    secondContactMobileNum: string
+    customerType: string
+    ecomLogins: []
+    addresses: []
+}
+
+EcomCustomer {
+    customerId: integer
+    indiFirstName: string
+    indiLastName: string
+    indiMobileNum: string
+    firstContactFirstName: string
+    firstContactLastName: string
+    firstContactEmail: string
+    firstContactMobileNum: string
+    secondContactFirstName: string
+    secondContactLastName: string
+    secondContactEmail: string
+    secondContactMobileNum: string
+    customerType: string
+    ecomLogins: []
+    addresses: []
+}
+
+
+
+
+CustomerAddressModel {
+    addressId: integer
+    firstName: string
+    lastName: string
+    pinCode: integer
+    address: string
+    city: string
+    state: string
+    landMark: string
+    country: string
+    mobileNo: integer
+    addressType: string
+    customer: EcomCustomer {}
+    loginName: string
+}
+EcomCartModel {
+    id: integer
+    custId: integer
+    sku: integer
+    qty: integer
+}
+
+EcomLoginModel {
+    id: integer
+    loginName: string
+    password: string
+    ecomCustomer: EcomCustomerModel {
+        customerId: integer
+        indiFirstName: string
+        indiLastName: string
+        indiMobileNum: string
+        firstContactFirstName: string
+        firstContactLastName: string
+        firstContactEmail: string
+        firstContactMobileNum: string
+        secondContactFirstName: string
+        secondContactLastName: string
+        secondContactEmail: string
+        secondContactMobileNum: string
+        customerType: string
+        ecomLogins: []
+        addresses: []
+    }
+}
+
+CustomerAddress {
+    addressId: integer
+    firstName: string
+    lastName: string
+    pinCode: integer
+    address: string
+    city: string
+    state: string
+    landMark: string
+    country: string
+    mobileNo: integer
+    addressType: string
+}
+
+
+
+http://127.0.0.1:8080/uruApp/api/auth/authenticateUser
+//http://127.0.0.1:8080/uruApp/api/auth/createUserDetails
+http://127.0.0.1:8080/uruApp/api/auth/createUserLogin
+http://127.0.0.1:8080/uruApp/api/auth/deleteUserDetails
+http://127.0.0.1:8080/uruApp/api/auth/getUserDetails
+
+http://127.0.0.1:8080/uruApp/api/cartService/addToCart
+http://127.0.0.1:8080/uruApp/api/cartService/deleteAllItemsForUser
+http://127.0.0.1:8080/uruApp/api/cartService/getItemsInCart
+http://127.0.0.1:8080/uruApp/api/cartService/removeItem
+http://127.0.0.1:8080/uruApp/api/cartService/updateItemQty
+
+http://127.0.0.1:8080/uruApp/api/customerService/createUserLogin  Registration step 1
+http://127.0.0.1:8080/uruApp/api/customerService/addCustomerAddress 
+http://127.0.0.1:8080/uruApp/api/customerService/addCustomerDetails Regitration 2
+http://127.0.0.1:8080/uruApp/api/customerService/getCustomerDetails
+http://127.0.0.1:8080/uruApp/api/customerService/updateCustomer
+
+
+
+
+

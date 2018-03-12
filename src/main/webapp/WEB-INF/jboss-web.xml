@@ -1,0 +1,3 @@
+<jboss-web>
+    <context-root>uruApp</context-root>
+</jboss-web>

@@ -1,0 +1,185 @@
+<form id="createSubCategory">
+<table id="subCategory">
+	<thead>
+		<tr>
+			<th>Property</th>
+			<th>Value</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Category ID</td>
+			<td><input type="text" name="categoryId"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Sub Category Name</td>
+			<td><input type="text" name="name" class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Short Description</td>
+			<td><input type="text" name="shortDesc"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Long Description</td>
+			<td><input type="text" name="longDesc"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>Large Image Alt text</td>
+			<td><input type="text" name="largeImgAltText"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Large Image Name</td>
+			<td><input type="text" name="largeImgName"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Image url</td>
+			<td><input type="text" name="largeImgUrl"
+				class="form-control font11" data-bind="value: largeImgURL"/></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td class="paddingAll" style="vertical-align:top"><b>Attach File:</b></td>
+			<td>
+			<input type="file" id="uploadLargeSubCategory" data-bind="event: { change: handleImages($element.files) }" accept="image/*" multiple>
+			<td><a style="font-size:1.5em;" class="glyphicon glyphicon-upload cmsbtn" data-bind="click: function(data, event) { uploadImages(data, event, 'uploadLargeSubCategory') }" title="Upload files"></a>
+			</td>
+			
+		</tr>
+		
+		<tr>
+			<td>Large Image Type</td>
+			<td><input type="text" name="largeImgType"
+				class="form-control font11"/></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>Small Image Alt text</td>
+			<td><input type="text" name="smallImgAltText"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Small Image Name</td>
+			<td><input type="text" name="smallImgName"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Small Image url</td>
+			<td><input type="text" name="smallImgUrl"
+				class="form-control font11" data-bind="value: smallImgURL"/></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td class="paddingAll" style="vertical-align:top"><b>Attach File:</b></td>
+			<td>
+			<input type="file" id="uploadSmallSubCategory" data-bind="event: { change: handleImages($element.files) }" accept="image/*" multiple>
+			<td><a style="font-size:1.5em;" class="glyphicon glyphicon-upload cmsbtn" data-bind="click: function(data, event) { uploadImages(data, event, 'uploadSmallSubCategory') }" title="Upload files"></a>
+			</td>
+			
+		</tr>
+		
+		<tr>
+			<td>Small Image Type</td>
+			<td><input type="text" name="smallImgType"
+				class="form-control font11"/></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>Today's Base Rate in INR/KG</td>
+			<td><input type="text" name="tBaseRate"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Today's Cut Piece Rate in INR/KG</td>
+			<td><input type="text" name="tCutRate"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Specific Gravity Considered GM/SQCM</td>
+			<td><input type="text" name="specGravity"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Minimum Dimension Allowed in MM</td>
+			<td><input type="text" name="minDimension"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>Seller Today's Base Rate in INR/KG</td>
+			<td><input type="text" name="sellerTBaseRate"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Seller Today's Cut Piece Rate in INR/KG</td>
+			<td><input type="text" name="sellerTCutRate"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Seller Specific Gravity Considered GM/SQCM</td>
+			<td><input type="text" name="sellerSpecGravity"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Seller Minimum Dimension Allowed in MM</td>
+			<td><input type="text" name="sellerMinDimension"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>Metal Type</td>
+			<td>
+                <select class="btn btn-default" name="metalType">
+                    <option value="MILDSTEEL">Mild Steel</option>
+                    <option value="COPPER">Copper</option>
+                    <option value="ALUMINIUM">Aluminium</option>
+                    <option value="STAINLESSSTEEL">Stainless Steel</option>
+                </select>
+            </td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>Root Category</td>
+			<td>
+                <select class="btn btn-default" name="rootCategory">
+                    <option value="OPTIMET">OPTIMET</option>
+                    <option value="OPTITRADE">OPTITRADE</option>
+                    <option value="OPTIBUY">OPTIBUY</option>
+                    <option value="OPTIBRAND">OPTIBRAND</option>
+                    <option value="OPTIWEAR">OPTIWEAR</option>
+                </select>
+            </td>
+			<td></td>
+		</tr>
+
+	</tbody>
+</table>
+<button type="button" class="btn btn-primary font11" data-bind="click: createSubCategory">Create</button>
+</form>

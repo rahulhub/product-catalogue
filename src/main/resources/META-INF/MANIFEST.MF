@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: HSN18 CMS Team
+Created-By: Apache Maven 3.0.5
+Build-Jdk: 1.8.0_60
+Dependencies: org.infinispan, org.infinispan.commons, org.jboss.as.clustering.infinispan export
+

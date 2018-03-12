@@ -1,0 +1,339 @@
+
+<div class="row" data-bind="visible: showCalculator">
+	<div class="optimet">
+		<div class="col-xs-9">
+			<div class="container">
+				<!-- HR SHEET-->
+				<div id="Optimet_carousel">
+					<div class="optimetDetails">
+						<div class="metal">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-3">
+										<div class="well proImage">
+											<img data-bind="attr: { src: calImageUrl}">
+										</div>
+									</div>
+									<h2 class="bhead-title1">WEIGHT AND RATE CALCULATOR</h2>
+
+									<form class="form-inline">
+										<h3 class="bhead-title1">
+											<span class="metal-color">MILD STEEL</span>:<span
+												data-bind="text: prodName"></span>
+										</h3>
+										<div class="form-group">
+											<label> TODAYS BASE RATE IN INR PER KG</label> <input
+												type="text" id="title" name="rate"
+												data-bind="value:tBaseRate" disabled>
+
+										</div>
+										<div class="form-group">
+											<label> TODAYS CUT PIECE RATE IN INR PER KG</label> <input
+												type="text" id="title" name="rate"
+												data-bind="value:tCutRate" disabled>
+										</div>
+										<div class="form-group">
+											<label> SPECIFIC GRAVITY CONSIDERED GM/SQCM</label> <input
+												type="text" id="title" name="rate"
+												data-bind="value:specGravity" disabled>
+										</div>
+										<div class="form-group">
+											<label> MINIMUM DIMENSION ALLOWED IN MM</label> <input
+												type="text" id="title" name="rate"
+												data-bind="value:minQuantity" disabled>
+										</div>
+									</form>
+									&nbsp;
+
+
+								</div>
+							</div>
+
+							<div class="metal_variables">
+
+								<div class="container">
+									<div class="row">
+
+										<h3 class="bhead-title1">PUNCH YOUR DIMENSIONS:-</h3>
+										<form class="form-inline">
+											<!--ko if: selectedProduct() != null && selectedProduct() != undefined -->
+											<div class="form-group"
+												data-bind="template: { name: templateName, data: selectedProduct }"></div>
+											<!-- /ko -->
+											<div class="form-group">
+												<label for="title">LENGTH REQUIRED (mm)</label> <input
+													type="text" id="len" name="length"
+													data-bind="value: $root.length">
+											</div>
+
+											<div class="form-group">
+												<label for="title"> WEIGHT OF PIECE (kg)</label> <input
+													type="text" id="title" name="title"
+													data-bind="value: weightOfPc" disabled>
+											</div>
+											<div class="form-group">
+												<label for="title">QTY REQUIRED (no&#8219;s)</label> <input
+													type="text" id="title" name="title"
+													data-bind="value: quantityRequired">
+											</div>
+											<div class="form-group">
+												<label for="title">TOTAL WEIGHT (kg)</label> <input
+													type="text" id="title" name="title"
+													data-bind="value: totalWeight" disabled>
+											</div>
+											<div class="form-group">
+												<label for="title">TOTAL PRICE (INR)</label> <input
+													type="text" id="title" name="title"
+													data-bind="value: totalPrice" disabled>
+											</div>
+											<div class="form-group">
+												<label for="title">ADD TO CART</label> <input type="text"
+													id="title" name="title">
+											</div>
+										</form>
+										&#160;
+										<p>
+											<strong> <i>#Prices are inclusive of excise
+													duty. however vat extra</i></strong>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- End Item -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9">
+
+			<div data-bind="foreach: products">
+				<div class="col-sm-3 cursorPointer"
+					data-bind="click: function (data,event){$root.openCalculator($data)}">
+					<div class="well productItem">
+						<div class="well well-sm">40% OFF</div>
+						<div class="proImage">
+
+
+							<img data-bind="attr: { src: $data.largeImgUrl}" />
+						</div>
+						<div class="proContent">
+							<p class="proTitle">
+								<span data-bind="text: $data.name"></span>
+							</p>
+							<p class="proDiscription">
+								<span data-bind="text: $data.longDesc"></span>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-9">
+		<div class="well middleImage">
+			<img src="images/banner2.png" alt="" />
+		</div>
+	</div>
+</div>
+
+
+<script type="text/html" id="sheetsNFlatstemplate">
+  
+										 
+	<div class="form-group">
+		 <label>SELECT THICKNESS (mm)</label>
+		 <div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $data.ecomItems,
+						   optionsText: 'name',
+						   value: $root.selectedItem,
+						   optionsCaption: 'Select item'"></select>
+		</div>
+		
+	</div>
+
+										 
+   <div class="form-group">									
+	   <label for="title"> WIDTH REQUIRED (mm)</label>
+		<input type="text" id="title" name="title" data-bind="value: $root.width">
+	</div>
+</script>
+
+<script type="text/html" id="checkerPlatestemplate">
+  
+										 
+	<div class="form-group">
+		 <label>SELECT THICKNESS (mm)</label>
+		 <div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $data.ecomItems,
+						   optionsText: 'name',
+						   value: $root.selectedItem,
+						   optionsCaption: 'Select item'"></select>
+		</div>
+		
+	</div>
+																					 
+   <div class="form-group">									
+	   <label for="title"> WIDTH REQUIRED (mm)</label>
+		<input type="text" id="title" name="title" data-bind="value: $root.width">
+	</div>
+</script>
+
+<script type="text/html" id="seamlessPipetemplate">
+  
+										 
+	<div class="form-group">
+		 <label> Select Outer Dia (mm) </label>
+		 <div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $data.ecomItems,
+						   optionsText: 'name',
+						   value: $root.selectedItem,
+						   optionsCaption: 'Select item'"></select>
+		</div>
+		
+	</div>
+	
+	<div class="form-group">
+		 <label> Select thickness </label>
+		 <div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $root.pipeThickness,
+						   optionsText: 'textValue',
+						   value: $root.selectedPipeThickness,
+						   optionsCaption: 'Select item'"></select>
+		</div>
+		
+	</div>
+										 					
+										 
+												   
+</script>
+
+<script type="text/html" id="erwPipetemplate">
+  
+										 
+	<div class="form-group">
+		 <label> Select Outer Dia (mm) </label>
+		 <div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $data.ecomItems,
+						   optionsText: 'name',
+						   value: $root.selectedItem,
+						   optionsCaption: 'Select item'"></select>
+		</div>
+		
+	</div>
+	
+	<div class="form-group">
+		 <label> Select thickness </label>
+		 <div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $root.pipeThickness,
+						   optionsText: 'textValue',
+						   value: $root.selectedPipeThickness,
+						   optionsCaption: 'Select item'"></select>
+		</div>
+		
+	</div>
+										 					
+										 
+												   
+</script>
+
+<script type="text/html" id="roundBartemplate">
+  
+										 
+	<div class="form-group">
+	 <label> Select Diameter (mm) </label>
+	 <div class="btn-group btn-group-sm browseCategory">
+		<select class="btn btn-default"
+			data-bind="options: $data.ecomItems,
+					   optionsText: 'name',
+					   value: $root.selectedItem,
+					   optionsCaption: 'Select item'"></select>
+	</div>
+
+	</div>
+													
+													
+										 					
+										 
+												   
+</script>
+
+<script type="text/html" id="squareBartemplate">
+  
+										 
+	<div class="form-group">
+		 <label> Select Side of Square (mm) </label>
+		 <div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $data.ecomItems,
+						   optionsText: 'name',
+						   value: $root.selectedItem,
+						   optionsCaption: 'Select item'"></select>
+		</div>
+		
+	</div>
+									 
+												   
+</script>
+
+
+<script type="text/html" id="cChannelsTemplate">
+  
+	 <div class="form-group">									
+	   <label for="title"> Image</label>
+		 <img data-bind="attr:{ src: '/images/' + $root.crossSectionImage }" />
+	</div>		
+
+<div class="form-group">
+		 <label> STD  </label>
+		 <div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $root.complexItems,
+						   optionsText: 'itemName',
+						   value: $root.selectedComplexItem,
+						   optionsCaption: 'Select item'"></select>
+		</div>
+		
+	</div>
+	
+	<div class="form-group">
+		 <label> SIZE  </label>
+		 <div class="btn-group btn-group-sm browseCategory">
+			<select class="btn btn-default"
+				data-bind="options: $root.complexSizes,
+						   optionsText: 'size',
+						   value: $root.selectedComplexSize,
+						   optionsCaption: 'Select Size'"></select>
+		</div>
+		
+	</div>		
+
+<div class="form-group">									
+	   <label for="title"> Cross Section</label>
+		<span data-bind="text: $root.crossSection"></span>
+	</div>					 
+									 
+												   
+</script>
+
+
+
+
+
+

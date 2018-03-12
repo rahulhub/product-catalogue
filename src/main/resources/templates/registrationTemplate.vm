@@ -1,0 +1,15 @@
+<HTML>
+	<HEAD>
+		<TITLE>Registration Success</TITLE>
+	</HEAD>
+	<BODY>
+		<div style="position:relative; width:100%;border-bottom:1px solid gray;">
+				<img src="http://52.32.100.238/ui/assets/img/izigro-logo.png" style="position:relative;width:25%;height:auto;margin-left:-3%;"/>
+		
+		<br/>
+		 Your Registration Successful  and Your Email-ID is $uname!
+		<br/>
+		Thanks for logging <a>www.iziGro.com</a> 
+		<BR/>
+	</BODY>	
+</HTML>

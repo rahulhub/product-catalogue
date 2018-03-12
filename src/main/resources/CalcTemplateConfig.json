@@ -1,0 +1,1436 @@
+[
+	{
+		"templateName": "sheetsNFlatstemplate",
+		"templateTitle": "Sheets or Flats Template",
+		"templateProperties": 
+		{
+			"calculationFunction": ""
+		}
+	},
+
+	{
+		"templateName": "checkerPlatestemplate",
+		"templateTitle": "Checker Plate Template",
+		"templateProperties": 
+		{
+			"calculationFunction": ""
+		}
+	},
+
+	{
+		"templateName": "seamlessPipetemplate",
+		"templateTitle": "Seamless Pipe Template",
+		"templateProperties": 
+		{
+			"calculationFunction": ""
+		}
+	},
+
+	{
+		"templateName": "erwPipetemplate",
+		"templateTitle": "ERW Pipe Template",
+		"templateProperties": 
+		{
+			"calculationFunction": ""
+		}
+	},
+
+	{
+		"templateName": "roundBartemplate",
+		"templateTitle": "Round Bar Template",
+		"templateProperties": 
+		{
+			"calculationFunction": ""
+		}
+	},
+
+	{
+		"templateName": "squareBartemplate",
+		"templateTitle": "Square Bar Template",
+		"templateProperties": 
+		{
+			"calculationFunction": ""
+		}
+	},
+
+	{
+		"templateName": "cChannelsTemplate",
+		"templateTitle": "C Channel Template",
+		"templateProperties": 
+		{
+			"calculationFunction": "",
+			"type": "complex",
+			"items": 
+			[
+				{
+					"itemId": "cc_ISJC",
+					"itemName": "ISJC",
+					"itemSize": 
+					[
+						{
+							"size": "100",
+							"crossSection": "730",
+							"image": ""
+						},
+
+						{
+							"size": "125",
+							"crossSection": "990",
+							"image": ""
+						},
+
+						{
+							"size": "150",
+							"crossSection": "1200",
+							"image": ""
+						},
+
+						{
+							"size": "175",
+							"crossSection": "1400",
+							"image": ""
+						},
+
+						{
+							"size": "200",
+							"crossSection": "1700",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "ISLC",
+					"itemSize": 
+					[
+						{
+							"size": "75",
+							"crossSection": "700",
+							"image": ""
+						},
+
+						{
+							"size": "100",
+							"crossSection": "989",
+							"image": ""
+						},
+
+						{
+							"size": "125",
+							"crossSection": "1300",
+							"image": ""
+						},
+
+						{
+							"size": "150",
+							"crossSection": "1801",
+							"image": ""
+						},
+
+						{
+							"size": "175",
+							"crossSection": "2200",
+							"image": ""
+						},
+
+						{
+							"size": "200",
+							"crossSection": "2590",
+							"image": ""
+						},
+
+						{
+							"size": "225",
+							"crossSection": "3002",
+							"image": ""
+						},
+
+						{
+							"size": "250",
+							"crossSection": "3489",
+							"image": ""
+						},
+
+						{
+							"size": "300",
+							"crossSection": "4100",
+							"image": ""
+						},
+
+						{
+							"size": "350",
+							"crossSection": "4800",
+							"image": ""
+						},
+
+						{
+							"size": "400",
+							"crossSection": "5700",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "ISMC",
+					"itemSize": 
+					[
+						{
+							"size": "75",
+							"crossSection": "865",
+							"image": ""
+						},
+
+						{
+							"size": "100",
+							"crossSection": "1160",
+							"image": ""
+						},
+
+						{
+							"size": "125",
+							"crossSection": "1610",
+							"image": ""
+						},
+
+						{
+							"size": "150",
+							"crossSection": "2023",
+							"image": ""
+						},
+
+						{
+							"size": "175",
+							"crossSection": "2400",
+							"image": ""
+						},
+
+						{
+							"size": "200",
+							"crossSection": "2780",
+							"image": ""
+						},
+
+						{
+							"size": "225",
+							"crossSection": "3260",
+							"image": ""
+						},
+
+						{
+							"size": "250",
+							"crossSection": "3700",
+							"image": ""
+						},
+
+						{
+							"size": "300",
+							"crossSection": "4480",
+							"image": ""
+						},
+
+						{
+							"size": "350",
+							"crossSection": "5190",
+							"image": ""
+						},
+
+						{
+							"size": "400",
+							"crossSection": "6167",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "ISCG",
+					"itemSize": 
+					[
+						{
+							"size": "16",
+							"crossSection": "95",
+							"image": ""
+						},
+
+						{
+							"size": "20",
+							"crossSection": "102",
+							"image": ""
+						},
+
+						{
+							"size": "40",
+							"crossSection": "125",
+							"image": ""
+						}
+					]
+				}
+			]
+		}
+	},
+
+	{
+		"templateName": "iBeamTemplate",
+		"templateTitle": "I Beam Template",
+		"templateProperties": 
+		{
+			"calculationFunction": "",
+			"type": "complex",
+			"items": 
+			[
+				{
+					"itemName": "ISJB",
+					"itemSize": 
+					[
+						{
+							"size": "150",
+							"crossSection": "900",
+							"image": ""
+						},
+
+						{
+							"size": "175",
+							"crossSection": "1000",
+							"image": ""
+						},
+
+						{
+							"size": "200",
+							"crossSection": "1200",
+							"image": ""
+						},
+
+						{
+							"size": "225",
+							"crossSection": "1600",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "ISLB",
+					"itemSize": 
+					[
+						{
+							"size": "75",
+							"crossSection": "750",
+							"image": ""
+						},
+
+						{
+							"size": "100",
+							"crossSection": "1000",
+							"image": ""
+						},
+
+						{
+							"size": "125",
+							"crossSection": "1490",
+							"image": ""
+						},
+
+						{
+							"size": "150",
+							"crossSection": "1790",
+							"image": ""
+						},
+
+						{
+							"size": "175",
+							"crossSection": "2080",
+							"image": ""
+						},
+
+						{
+							"size": "200",
+							"crossSection": "2478",
+							"image": ""
+						},
+
+						{
+							"size": "225",
+							"crossSection": "2900",
+							"image": ""
+						},
+
+						{
+							"size": "250",
+							"crossSection": "3400",
+							"image": ""
+						},
+
+						{
+							"size": "275",
+							"crossSection": "4120",
+							"image": ""
+						},
+
+						{
+							"size": "300",
+							"crossSection": "4705",
+							"image": ""
+						},
+
+						{
+							"size": "325",
+							"crossSection": "5300",
+							"image": ""
+						},
+
+						{
+							"size": "350",
+							"crossSection": "6230",
+							"image": ""
+						},
+
+						{
+							"size": "400",
+							"crossSection": "7100",
+							"image": ""
+						},
+
+						{
+							"size": "450",
+							"crossSection": "8300",
+							"image": ""
+						},
+
+						{
+							"size": "500",
+							"crossSection": "9400",
+							"image": ""
+						},
+
+						{
+							"size": "550",
+							"crossSection": "10000",
+							"image": ""
+						},
+
+						{
+							"size": "600",
+							"crossSection": "11000",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "ISMB",
+					"itemSize": 
+					[
+						{
+							"size": "100",
+							"crossSection": "1450",
+							"image": ""
+						},
+
+						{
+							"size": "125",
+							"crossSection": "1550",
+							"image": ""
+						},
+
+						{
+							"size": "150",
+							"crossSection": "1860",
+							"image": ""
+						},
+
+						{
+							"size": "175",
+							"crossSection": "2400",
+							"image": ""
+						},
+
+						{
+							"size": "200",
+							"crossSection": "3160",
+							"image": ""
+						},
+
+						{
+							"size": "225",
+							"crossSection": "3900",
+							"image": ""
+						},
+
+						{
+							"size": "250",
+							"crossSection": "4700",
+							"image": ""
+						},
+
+						{
+							"size": "300",
+							"crossSection": "5500",
+							"image": ""
+						},
+
+						{
+							"size": "350",
+							"crossSection": "6500",
+							"image": ""
+						},
+
+						{
+							"size": "400",
+							"crossSection": "7700",
+							"image": ""
+						},
+
+						{
+							"size": "450",
+							"crossSection": "9100",
+							"image": ""
+						},
+
+						{
+							"size": "500",
+							"crossSection": "10900",
+							"image": ""
+						},
+
+						{
+							"size": "550",
+							"crossSection": "13000",
+							"image": ""
+						},
+
+						{
+							"size": "600",
+							"crossSection": "14400",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "ISWB",
+					"itemSize": 
+					[
+						{
+							"size": "150",
+							"crossSection": "2100",
+							"image": ""
+						},
+
+						{
+							"size": "175",
+							"crossSection": "2750",
+							"image": ""
+						},
+
+						{
+							"size": "200",
+							"crossSection": "3550",
+							"image": ""
+						},
+
+						{
+							"size": "225",
+							"crossSection": "4220",
+							"image": ""
+						},
+
+						{
+							"size": "250",
+							"crossSection": "5100",
+							"image": ""
+						},
+
+						{
+							"size": "300",
+							"crossSection": "6000",
+							"image": ""
+						},
+
+						{
+							"size": "350",
+							"crossSection": "7100",
+							"image": ""
+						},
+
+						{
+							"size": "400",
+							"crossSection": "8400",
+							"image": ""
+						},
+
+						{
+							"size": "450",
+							"crossSection": "10000",
+							"image": ""
+						},
+
+						{
+							"size": "500",
+							"crossSection": "11900",
+							"image": ""
+						},
+
+						{
+							"size": "550",
+							"crossSection": "14100",
+							"image": ""
+						},
+
+						{
+							"size": "600",
+							"crossSection": "16000",
+							"image": ""
+						}
+					]
+				}
+			]
+		}
+	},
+
+	{
+		"templateName": "rectPipeTemplate",
+		"templateTitle": "Rectangular Pipe Template",
+		"templateProperties": 
+		{
+			"calculationFunction": "",
+			"type": "complex",
+			"items": 
+			[
+				{
+					"itemName": "2.00",
+					"itemSize": 
+					[
+						{
+							"size": "50 X 25",
+							"crossSection": "2.74 ",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "2.60",
+					"itemSize": 
+					[
+						{
+							"size": "50 X 25",
+							"crossSection": "3.46",
+							"image": ""
+						},
+
+						{
+							"size": "60 X 40",
+							"crossSection": "4.76",
+							"image": ""
+						},
+
+						{
+							"size": "66 X 33",
+							"crossSection": "4.70",
+							"image": ""
+						},
+
+						{
+							"size": "80 X 40",
+							"crossSection": "5.80",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "2.90",
+					"itemSize": 
+					[
+						{
+							"size": "60 X 40",
+							"crossSection": "5.25",
+							"image": ""
+						},
+
+						{
+							"size": "66 X 33",
+							"crossSection": "5.19",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "3.20",
+					"itemSize": 
+					[
+						{
+							"size": "50 X 25",
+							"crossSection": "4.13",
+							"image": ""
+						},
+
+						{
+							"size": "80 X 20",
+							"crossSection": "7.01",
+							"image": ""
+						},
+
+						{
+							"size": "96 X 48",
+							"crossSection": "8.54",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "3.60",
+					"itemSize": 
+					[
+						{
+							"size": "60 X 40",
+							"crossSection": "6.35",
+							"image": ""
+						},
+
+						{
+							"size": "66 X 33",
+							"crossSection": "6.28",
+							"image": ""
+						},
+
+						{
+							"size": "122 X 61",
+							"crossSection": "12.32",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "4.00",
+					"itemSize": 
+					[
+						{
+							"size": "50 X 25",
+							"crossSection": "4.95",
+							"image": ""
+						},
+
+						{
+							"size": "80 X 40",
+							"crossSection": "8.55",
+							"image": ""
+						},
+
+						{
+							"size": "96 X 48",
+							"crossSection": "10.47",
+							"image": ""
+						},
+
+						{
+							"size": "200 X 100",
+							"crossSection": "22.95",
+							"image": ""
+						},
+
+						{
+							"size": "220 X 140",
+							"crossSection": "27.75",
+							"image": ""
+						},
+
+						{
+							"size": "240 X 120",
+							"crossSection": "27.75",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "4.50",
+					"itemSize": 
+					[
+						{
+							"size": "60 X 40",
+							"crossSection": "7.67",
+							"image": ""
+						},
+
+						{
+							"size": "66 X 33",
+							"crossSection": "7.58",
+							"image": ""
+						},
+
+						{
+							"size": "122 X 61",
+							"crossSection": "15.14",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "4.80",
+					"itemSize": 
+					[
+						{
+							"size": "80 X 40",
+							"crossSection": "10.01",
+							"image": ""
+						},
+
+						{
+							"size": "96 X 48",
+							"crossSection": "12.31",
+							"image": ""
+						},
+
+						{
+							"size": "145 X 82",
+							"crossSection": "20.28",
+							"image": ""
+						},
+
+						{
+							"size": "172 X 92",
+							"crossSection": "23.83",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "5.00",
+					"itemSize": 
+					[
+						{
+							"size": "200 X 100",
+							"crossSection": "28.36",
+							"image": ""
+						},
+
+						{
+							"size": "220 X 140",
+							"crossSection": "34.36",
+							"image": ""
+						},
+
+						{
+							"size": "240 X 120",
+							"crossSection": "34.36",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "5.40",
+					"itemSize": 
+					[
+						{
+							"size": "122 X 61",
+							"crossSection": "17.85",
+							"image": ""
+						},
+
+						{
+							"size": "145 X 82",
+							"crossSection": "22.60",
+							"image": ""
+						},
+
+						{
+							"size": "172 X 92",
+							"crossSection": "26.59",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "6.00",
+					"itemSize": 
+					[
+						{
+							"size": "200 X 100",
+							"crossSection": "33.63",
+							"image": ""
+						},
+
+						{
+							"size": "220 X 140",
+							"crossSection": "40.83",
+							"image": ""
+						},
+
+						{
+							"size": "240 X 120",
+							"crossSection": "40.83",
+							"image": ""
+						},
+
+						{
+							"size": "260 X 180",
+							"crossSection": "50.43",
+							"image": ""
+						},
+
+						{
+							"size": "300 X 150",
+							"crossSection": "51.63",
+							"image": ""
+						},
+
+						{
+							"size": "300 X 200",
+							"crossSection": "57.63",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "8.00",
+					"itemSize": 
+					[
+						{
+							"size": "200 X 100",
+							"crossSection": "43.79",
+							"image": ""
+						},
+
+						{
+							"size": "220 X 140",
+							"crossSection": "53.39",
+							"image": ""
+						},
+
+						{
+							"size": "240 X 120",
+							"crossSection": "53.39",
+							"image": ""
+						},
+
+						{
+							"size": "260 X 180",
+							"crossSection": "66.19",
+							"image": ""
+						},
+
+						{
+							"size": "300 X 150",
+							"crossSection": "67.79",
+							"image": ""
+						},
+
+						{
+							"size": "300 X 200",
+							"crossSection": "75.79",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "10.00",
+					"itemSize": 
+					[
+						{
+							"size": "260 X 180",
+							"crossSection": "81.43",
+							"image": ""
+						},
+
+						{
+							"size": "300 X 150",
+							"crossSection": "83.43",
+							"image": ""
+						},
+
+						{
+							"size": "300 X 200",
+							"crossSection": "93.43",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "12.00",
+					"itemSize": 
+					[
+						{
+							"size": "260 X 180",
+							"crossSection": "96.14",
+							"image": ""
+						},
+
+						{
+							"size": "300 X 200",
+							"crossSection": "96.14",
+							"image": ""
+						}
+					]
+				}
+			]
+		}
+	},
+
+	{
+		"templateName": "unEqualAngleTemplate",
+		"templateTitle": "Unequal Angle Template",
+		"templateProperties": 
+		{
+			"calculationFunction": "",
+			"type": "complex",
+			"items": 
+			[
+				{
+					"itemName": "3",
+					"itemSize": 
+					[
+						{
+							"size": "30X20",
+							"crossSection": "140",
+							"image": ""
+						},
+
+						{
+							"size": "40X25",
+							"crossSection": "188",
+							"image": ""
+						},
+
+						{
+							"size": "45X30",
+							"crossSection": "218",
+							"image": ""
+						},
+
+						{
+							"size": "50X30",
+							"crossSection": "231",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "4",
+					"itemSize": 
+					[
+						{
+							"size": "30X20",
+							"crossSection": "182",
+							"image": ""
+						},
+
+						{
+							"size": "40X25",
+							"crossSection": "242",
+							"image": ""
+						},
+
+						{
+							"size": "45X30",
+							"crossSection": "284",
+							"image": ""
+						},
+
+						{
+							"size": "50X30",
+							"crossSection": "302",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "5",
+					"itemSize": 
+					[
+						{
+							"size": "30X20",
+							"crossSection": "222",
+							"image": ""
+						},
+
+						{
+							"size": "40X25",
+							"crossSection": "300",
+							"image": ""
+						},
+
+						{
+							"size": "45X30",
+							"crossSection": "350",
+							"image": ""
+						},
+
+						{
+							"size": "50X30",
+							"crossSection": "375",
+							"image": ""
+						},
+
+						{
+							"size": "60X40",
+							"crossSection": "472",
+							"image": ""
+						},
+
+						{
+							"size": "65X45",
+							"crossSection": "520",
+							"image": ""
+						},
+
+						{
+							"size": "75X45",
+							"crossSection": "545",
+							"image": ""
+						},
+
+						{
+							"size": "75X50",
+							"crossSection": "598",
+							"image": ""
+						},
+
+						{
+							"size": "80X50",
+							"crossSection": "620",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "6",
+					"itemSize": 
+					[
+						{
+							"size": "40X25",
+							"crossSection": "352",
+							"image": ""
+						},
+
+						{
+							"size": "45X30",
+							"crossSection": "413",
+							"image": ""
+						},
+
+						{
+							"size": "50X30",
+							"crossSection": "441",
+							"image": ""
+						},
+
+						{
+							"size": "60X40",
+							"crossSection": "560",
+							"image": ""
+						},
+
+						{
+							"size": "65X45",
+							"crossSection": "620",
+							"image": ""
+						},
+
+						{
+							"size": "75X45",
+							"crossSection": "650",
+							"image": ""
+						},
+
+						{
+							"size": "75X50",
+							"crossSection": "709",
+							"image": ""
+						},
+
+						{
+							"size": "80X50",
+							"crossSection": "740",
+							"image": ""
+						},
+
+						{
+							"size": "90X60",
+							"crossSection": "860",
+							"image": ""
+						},
+
+						{
+							"size": "100X65",
+							"crossSection": "945",
+							"image": ""
+						},
+
+						{
+							"size": "100X75",
+							"crossSection": "1000",
+							"image": ""
+						},
+
+						{
+							"size": "125X75",
+							"crossSection": "1145",
+							"image": ""
+						},
+
+						{
+							"size": "125X95",
+							"crossSection": "1275",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "8",
+					"itemSize": 
+					[
+						{
+							"size": "60X40",
+							"crossSection": "731",
+							"image": ""
+						},
+
+						{
+							"size": "65X45",
+							"crossSection": "811",
+							"image": ""
+						},
+
+						{
+							"size": "75X45",
+							"crossSection": "850",
+							"image": ""
+						},
+
+						{
+							"size": "75X50",
+							"crossSection": "930",
+							"image": ""
+						},
+
+						{
+							"size": "80X50",
+							"crossSection": "967",
+							"image": ""
+						},
+
+						{
+							"size": "90X60",
+							"crossSection": "1125",
+							"image": ""
+						},
+
+						{
+							"size": "100X65",
+							"crossSection": "1245",
+							"image": ""
+						},
+
+						{
+							"size": "100X75",
+							"crossSection": "1325",
+							"image": ""
+						},
+
+						{
+							"size": "125X75",
+							"crossSection": "1528",
+							"image": ""
+						},
+
+						{
+							"size": "125X95",
+							"crossSection": "1680",
+							"image": ""
+						},
+
+						{
+							"size": "150X75",
+							"crossSection": "1729",
+							"image": ""
+						},
+
+						{
+							"size": "150X115",
+							"crossSection": "2032",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "10",
+					"itemSize": 
+					[
+						{
+							"size": "75X45",
+							"crossSection": "1042",
+							"image": ""
+						},
+
+						{
+							"size": "75X50",
+							"crossSection": "1143",
+							"image": ""
+						},
+
+						{
+							"size": "80X50",
+							"crossSection": "1189",
+							"image": ""
+						},
+
+						{
+							"size": "90X60",
+							"crossSection": "1391",
+							"image": ""
+						},
+
+						{
+							"size": "100X65",
+							"crossSection": "1549",
+							"image": ""
+						},
+
+						{
+							"size": "100X75",
+							"crossSection": "1643",
+							"image": ""
+						},
+
+						{
+							"size": "125X75",
+							"crossSection": "1891",
+							"image": ""
+						},
+
+						{
+							"size": "125X95",
+							"crossSection": "2087",
+							"image": ""
+						},
+
+						{
+							"size": "150X75",
+							"crossSection": "2140",
+							"image": ""
+						},
+
+						{
+							"size": "150X115",
+							"crossSection": "2531",
+							"image": ""
+						},
+
+						{
+							"size": "200X100",
+							"crossSection": "2878",
+							"image": ""
+						},
+
+						{
+							"size": "200x150",
+							"crossSection": "3304",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "12",
+					"itemSize": 
+					[
+						{
+							"size": "90X60",
+							"crossSection": "1641",
+							"image": ""
+						},
+
+						{
+							"size": "100X75",
+							"crossSection": "1937",
+							"image": ""
+						},
+
+						{
+							"size": "125X95",
+							"crossSection": "2400",
+							"image": ""
+						},
+
+						{
+							"size": "150X75",
+							"crossSection": "2456",
+							"image": ""
+						},
+
+						{
+							"size": "150X115",
+							"crossSection": "3000",
+							"image": ""
+						},
+
+						{
+							"size": "200X100",
+							"crossSection": "3345",
+							"image": ""
+						},
+
+						{
+							"size": "200X150",
+							"crossSection": "3954",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "15",
+					"itemSize": 
+					[
+						{
+							"size": "150X115",
+							"crossSection": "3680",
+							"image": ""
+						},
+
+						{
+							"size": "200X100",
+							"crossSection": "4150",
+							"image": ""
+						},
+
+						{
+							"size": "200X150",
+							"crossSection": "4967",
+							"image": ""
+						}
+					]
+				},
+
+				{
+					"itemName": "25",
+					"itemSize": 
+					[
+						{
+							"size": "200X150",
+							"crossSection": "5878",
+							"image": ""
+						}
+					]
+				}
+			]
+		}
+	}
+]

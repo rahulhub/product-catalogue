@@ -1,0 +1,88 @@
+<form id="addItemMedia">
+<table id="itemMedia">
+	<thead>
+		<tr>
+			<th>Property</th>
+			<th>Value</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Large Image Alt text</td>
+			<td><input type="text" name="largeImgAltText"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Large Image Name</td>
+			<td><input type="text" name="largeImgName"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Large Image url</td>
+			<td><input type="text" name="largeImgUrl"
+				class="form-control font11" data-bind="value: largeImgURL"/></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="paddingAll" style="vertical-align:top"><b>Attach File:</b></td>
+			<td>
+			<input type="file" id="uploadItemLargeImage" data-bind="event: { change: handleImages($element.files) }" accept="image/*" multiple>
+			<td><a style="font-size:1.5em;" class="glyphicon glyphicon-upload cmsbtn" data-bind="click: function(data, event) { uploadImages(data, event, 'uploadItemLargeImage') }" title="Upload files"></a>
+			</td>
+			
+		</tr>
+		
+		<tr>
+			<td>Large Image Type</td>
+			<td><input type="text" name="largeImgType"
+				class="form-control font11"/></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>Small Image Alt text</td>
+			<td><input type="text" name="smallImgAltText"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Small Image Name</td>
+			<td><input type="text" name="smallImgName"
+				class="form-control font11" /></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>Small Image url</td>
+			<td><input type="text" name="smallImgUrl"
+				class="form-control font11" data-bind="value: smallImgURL"/></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td class="paddingAll" style="vertical-align:top"><b>Attach File:</b></td>
+			<td>
+			<input type="file" id="uploadItemSmallImage" data-bind="event: { change: handleImages($element.files) }" accept="image/*" multiple>
+			<td><a style="font-size:1.5em;" class="glyphicon glyphicon-upload cmsbtn" data-bind="click: function(data, event) { uploadImages(data, event, 'uploadItemSmallImage') }" title="Upload files"></a>
+			</td>
+			
+		</tr>
+		
+		<tr>
+			<td>Small Image Type</td>
+			<td><input type="text" name="smallImgType"
+				class="form-control font11"/></td>
+			<td></td>
+		</tr>
+		
+		
+		
+
+	</tbody>
+</table>
+
+<button type="button" class="btn btn-primary font11" data-bind="click: createItemMedia">Create</button>
+</form>

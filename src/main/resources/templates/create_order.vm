@@ -1,0 +1,68 @@
+<HTML>
+    <HEAD>
+      <TITLE>Order Mail</TITLE>
+    </HEAD>
+
+
+    <BODY>
+      
+      	<div style="position:relative; width:100%;border-bottom:1px solid gray;">
+				<img src="http://52.32.100.238/ui/assets/img/izigro-logo.png" style="position:relative;width:25%;height:auto;margin-left:-3%;"/>
+		
+      
+      <br/><br/>
+      <p>
+         Dear <b>$custname</b>
+         <br/>
+              We Thank fully acknowledge the receipt of your order.
+         <br/><br/>     
+      </p>
+      
+      <CENTER> 
+      #set( $count = 1 )  
+      <TABLE border="1" width="100%">
+     		<thead>
+            	<th>Sr. No.</th>
+            	<th>OrderId</th>
+            	<th>Order Date</th>
+            	<th>Description</th>
+            	<th>Quantity</th>
+            	<th>Total Amount(INR)</th>
+            	<th>Discount (%)</th>
+            	<th>Discounted Amount (INR) </th>
+            	<th>Tax (INR)</th>
+            	<th>Total(INR)</th>
+            </thead>
+            <tbody>
+        #foreach( $pet in $OrderList)
+          <TR>
+            	<TD align="right">$count</TD>
+            	<TD align="right">$pet.OrderId</TD>
+            	<TD>$pet.OrderDate</TD>
+           		<TD>$pet.Description</TD>
+            	<TD align="right">$pet.Quantity</TD>
+            	<TD align="right">$pet.MRP</TD>
+            	<TD align="right">$pet.Discount</TD>
+            	<TD align="right">$pet.Disc_Amount</TD>
+            	<TD align="right">$pet.Tax_Amount</TD>
+            	<TD align="right">$pet.Sub_Total</TD>
+          </TR>
+          #set( $count = $count + 1 )
+        #end
+        	<TR>
+        			<TD colspan="9"><h4><b>Total Payable Amount</b></h4></TD>
+        			<TD align="right"><h4><b>$Total</b></h4></TD>
+        	</TR>
+        </tbody>
+      </TABLE>
+    
+      </CENTER>
+    
+      <br/>
+       <p>Shall we keep you posted on this matter.
+       <br/>
+          Thanks and Regards,<br/>
+          In <a>www.iziGro.com</a>
+       </br>
+    </BODY>
+  </HTML>

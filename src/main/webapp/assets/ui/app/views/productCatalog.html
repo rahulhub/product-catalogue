@@ -1,0 +1,104 @@
+<div class="container">
+
+	<div class="row">
+		<div id="breadcrumb" class="col-md-12">
+			<ol class="breadcrumb">
+				<li><a href="index.html">Dashboard</a></li>
+				<li><a href="#">Forms</a></li>
+				<li><a href="#">Forms layouts</a></li>
+			</ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12">
+			<div class="box">
+				<div class="box-header"></div>
+				<div class="box-content">
+					<h4 class="page-header">Create Product</h4>
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Root Category</label>
+							<div class="col-sm-5">
+								<select class="populate placeholder" name="rootCategory"
+									id="rootCategory">
+									<option value="">-- Select a Category --</option>
+									<option value="1">OptiMet</option>
+									<option value="2">OptiTrade</option>
+									<option value="3">OptiBuy</option>
+									<option value="4">OptiBrand</option>
+									<option value="5">OptiWear</option>
+
+								</select>
+							</div>
+						</div>
+
+						<table>
+							<thead>
+								<tr>
+									<th width='25%'>Sub Category</th>
+									<th width='25%'>Product Type</th>
+									<th class='price' width='15%'>Price</th>
+									<th class='quantity' width='10%'>Quantity</th>
+									<th class='price' width='15%'>Subtotal</th>
+									<th width='10%'></th>
+								</tr>
+							</thead>
+							<tbody data-bind='foreach: lines'>
+								<tr>
+									<td><select
+										data-bind='options: sampleProductCategories, optionsText: "name", optionsCaption: "Select...", value: category'>
+									</select></td>
+									<td data-bind="with: category"><select
+										data-bind='options: products, optionsText: "name", optionsCaption: "Select...", value: $parent.product'>
+									</select></td>
+									<td class='price' data-bind='with: product'><span
+										data-bind='text: formatCurrency(price)'> </span></td>
+									<td class='quantity'><input
+										data-bind='visible: product, value: quantity, valueUpdate: "afterkeydown"' />
+									</td>
+									<td class='price'><span
+										data-bind='visible: product, text: formatCurrency(subtotal())'>
+									</span></td>
+									<td><a href='#' data-bind='click: $parent.removeLine'>Remove</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class='grandTotal'>
+							Total value: <span data-bind='text: formatCurrency(grandTotal())'>
+							</span>
+						</p>
+						<button data-bind='click: addLine'>Add product</button>
+						<button data-bind='click: save'>Submit order</button>
+
+
+
+
+
+
+						<div class="clearfix"></div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-2">
+								<button type="button" class="btn btn-default btn-label-left">
+									<span><i class="fa fa-clock-o txt-danger"></i></span> Cancel
+								</button>
+							</div>
+							<div class="col-sm-2">
+								<button type="submit" class="btn btn-warning btn-label-left">
+									<span><i class="fa fa-clock-o"></i></span> Send later
+								</button>
+							</div>
+							<div class="col-sm-2">
+								<button type="submit" class="btn btn-primary btn-label-left">
+									<span><i class="fa fa-clock-o"></i></span> Submit
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- /container -->
