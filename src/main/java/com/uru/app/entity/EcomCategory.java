@@ -157,7 +157,7 @@ public class EcomCategory implements Serializable {
 
 	//bi-directional many-to-one association to EcomProduct
 	@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-	@OneToMany(mappedBy="ecomCategory", cascade=CascadeType.ALL,fetch = FetchType.LAZY)
+	@OneToMany(mappedBy="ecomCategory", cascade=CascadeType.ALL,fetch = FetchType.EAGER)
 	private List<EcomProduct> ecomProducts;
 	
 	//bi-directional many-to-one association to EcomProduct

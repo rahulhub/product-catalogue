@@ -68,16 +68,16 @@ public class EntityToModelUtil {
 			model.setEcomCategories(listEcomCatalogModel);
 		}
 		
-//		if(!ecomCategory.getEcomProducts().isEmpty()){			
-//		List<EcomProductModel> ptmSet = new ArrayList<EcomProductModel>();
-//		for (EcomProduct pt : ecomCategory.getEcomProducts()) {
-//			EcomProductModel ptm = convertProductTypeToModel(pt);
-//			ptm.setEcomCategory(model);
-//			ptmSet.add(ptm);
-//		}
-//
-//		model.setEcomProducts(ptmSet);
-//		}
+		if(!ecomCategory.getEcomProducts().isEmpty()){			
+		List<EcomProductModel> ptmSet = new ArrayList<EcomProductModel>();
+		for (EcomProduct pt : ecomCategory.getEcomProducts()) {
+			EcomProductModel ptm = convertProductTypeToModel(pt);
+			ptm.setEcomCategory(model);
+			ptmSet.add(ptm);
+		}
+
+		model.setEcomProducts(ptmSet);
+		}
 		return model;
 	}
 
