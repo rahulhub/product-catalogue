@@ -54,7 +54,7 @@
 			<tr>
 				<td class="paddingAll" style="vertical-align:top"><b>Attach File:</b></td>
 				<td>
-					<input type="file" id="uploadLargeProductImg" data-bind="event: { change: handleImages($element.files) }" accept="image/*" multiple>
+					<input type="file" id="uploadLargeProductImg" data-bind="event: { change: handleImages($element.files) }" accept="image/*,.jpg,.jpeg.,.gif,.png,.mov,.mp4,.wmv" multiple>
 				<td><a style="font-size:1.5em;" class="glyphicon glyphicon-upload cmsbtn" data-bind="click: function(data, event) { uploadImages(data, event, 'uploadLargeProductImg') }" title="Upload files"></a>
 				</td>
 

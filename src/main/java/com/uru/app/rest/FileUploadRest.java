@@ -6,6 +6,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import javax.inject.Inject;
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -136,7 +137,10 @@ public class FileUploadRest {
 	@POST
 	@Path("/uploadFile")
 	public Response upload(@Context HttpServletRequest request) {
-		FileItemFactory factory = new DiskFileItemFactory();
+		DiskFileItemFactory factory = new DiskFileItemFactory();
+		ServletContext servletContext = request.getServletContext();
+		File repository = (File) servletContext.getAttribute("javax.servlet.context.tempdir");
+		factory.setRepository(repository);
 		ServletFileUpload upload = new ServletFileUpload(factory);
 		String rootFolderName = null;
 		String subFolderName = null;
